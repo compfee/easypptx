@@ -1,8 +1,5 @@
 # easy.pptx  
-![Static Badge](https://img.shields.io/badge/python-blue)
-![Static Badge](https://img.shields.io/badge/FastAPI-blue)
-
-![Static Badge](https://img.shields.io/badge/transformers-orange)
+![Static Badge](https://img.shields.io/badge/python-blue)![Static Badge](https://img.shields.io/badge/FastAPI-blue)![Static Badge](https://img.shields.io/badge/transformers-orange)
 
 Этот проект на FastAPI представляет собой сервис, который поможет создавать красивые презентации из объемных PDF документов, 
 таких как научные статьи, дипломы, отчеты о деятельности компании, бизнес-планы и многое другое. 
