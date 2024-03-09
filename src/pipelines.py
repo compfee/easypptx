@@ -1,8 +1,9 @@
 from tqdm import tqdm
-from pipelines.summarization import Summarizer
+from src.summarization import Summarizer
 import config
 import pandas as pd
-from pipelines.pdf_parse import PDFParser
+from src.pdf_parse import PDFParser
+from src.PPStyle import PPPresentation
 
 def pipeline_sum(data, model, max_length=70):
     '''Summarization pipeline'''
@@ -20,3 +21,7 @@ def pipeline_parse(file):
     parser = PDFParser()
     text, file_name = parser.parse_text(file)
     return text, file_name
+
+def pipeline_gen_slide(file, theme = None):
+    p = PPPresentation(file, theme=config.NAME_PATTERN)
+    return p.create_presentation()
